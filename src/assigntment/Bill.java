@@ -1,9 +1,7 @@
 
 package assigntment;
-import java.util.ArrayList;
-import java.util.Scanner;
 
-// Lớp Bill để lưu thông tin hóa đơn
+
 class Bill {
     private String customerCode;
     private String customerType;

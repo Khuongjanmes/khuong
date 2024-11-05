@@ -4,13 +4,16 @@
  */
 package assigntment;
 
+import assigntment.Bill;
 import java.util.ArrayList;
 
 class BillManager {
     private ArrayList<Bill> bills = new ArrayList<>();
 
     public void addBill(Bill bill) {
+        if (findBillByCode(bill.getCustomerCode()) == null){
         bills.add(bill);
+        }
     }
 
     public Bill findBillByCode(String code) {
